@@ -1,0 +1,17 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,724.05,8688.6,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,Amazon EC2,0,774.47,9293.64,USD,"Operating system (Linux), Quantity (12), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t4g.xlarge)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,266.45,3197.4,USD,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,4439.92,53279.04,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (8 TB), Quantity (2), Instance type (db.m1.large), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (0 TB)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,262.52,3150.24,USD,S3 Standard storage (10 TB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,"DT Inbound: Internet (10 TB per month), DT Outbound: Amazon CloudFront (10 TB per month)"
+,,,,,,,,
+,,,,,Total Monthly,,,
+,,,,,6467.41,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+Changes made to reduce cost,,,,,,,,
+VPC - Reduce data processed by gateway from 20 to 15 TB/month,,,,,,,,
+EC2 - Reduce number of EC2 instances from 16 to 12,,,,,,,,
+"RDS - Reduce storage from 10 to 8TB, remove backup storage",,,,,,,,

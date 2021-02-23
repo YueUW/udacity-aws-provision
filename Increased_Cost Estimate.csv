@@ -1,0 +1,23 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,1415.25,16983,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,Amazon EC2,0,4152.2,49826.4,USD,"Operating system (Linux), Quantity (20), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (200 GB), Instance type (a1.metal)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,500.05,6000.6,USD,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,12038,144456,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (20 TB), Quantity (2), Instance type (db.m1.large), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (20 TB)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,525.09,6301.08,USD,S3 Standard storage (20 TB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,"DT Inbound: Internet (10 TB per month), DT Outbound: Amazon CloudFront (10 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,182.45715,2189.49,USD,"Number of Metrics (includes detailed and custom metrics) (20), GetMetricData: Number of metrics requested (20), GetMetricWidgetImage: Number of metrics requested (20), Standard Logs: Data Ingested (100 GB), Vended Logs: Data Ingested (100 GB), Number of Custom/Cross-account events (50), Number of Dashboards (10), Expected Logs Data scanned (100 GB), Number of Canary runs (30), Number of Lambda functions (10), Number of Contributor Insights rules for CloudWatch (20), Total number of matched log events for CloudWatch (1 million matched log events per month), Number of other API requests (50), Logs Delivered to S3: Data Ingested (100 GB), Number of Standard Resolution Alarm Metrics (20), Number of High Resolution Alarm Metrics (10), Number of composite alarms (10)"
+My Estimate,US East (N. Virginia),,AWS Web Application Firewall (WAF),0,186,2232,USD,"Number of Rule Groups per Web ACL (10 per month), Number of Rules added per Web ACL (10 per month), Number of Web Access Control Lists (Web ACLs) utilized (10 per month), Number of Rules inside each Rule Group (10 per month), Number of Managed Rule Groups (10 per month)"
+,,,,,,,,
+,,,,,Total Monthly,,,
+,,,,,18999.04715,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+Change made to increase performance,,,,,,,,
+VPC - Increase data processed by gateway per month,,,,,,,,
+"EC2 - Increase number of instances, CPU and memory of each instance ",,,,,,,,
+RDS - Increase RDS storage and have a matching backup storage,,,,,,,,
+S3 - Increase S3 storage,,,,,,,,
+Load Balancer - Increase processing capacity,,,,,,,,
+"CloudWatch - Add the service to monitor metrics, logs and events",,,,,,,,
+Web Application Firewall - Add the service for web security and access control,,,,,,,,
